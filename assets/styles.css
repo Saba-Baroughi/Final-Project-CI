@@ -278,6 +278,7 @@ body {
   padding-left: 0;
   display: flex;
   list-style-type: none;
+  font-size: 1.2rem;
 }
 .nav-manu-item {
   list-style: none;
@@ -307,6 +308,71 @@ body {
 }
 
 /* head/nav-bottom */
+/* Animation*/
+
+.nav-bottom {
+  margin: 22rem 0;
+  /* why */
+}
+
+#slideset div {
+  max-width: 70%;
+  top: 18rem;
+  position: absolute;
+  left: 2rem;
+}
+#slideset > * {
+  visibility: hidden;
+  animation: 18s autoplay infinite;
+}
+@keyframes autoplay {
+  0% {
+    visibility: visible;
+  }
+  33% {
+    visibility: hidden;
+  }
+}
+#slideset > *:nth-child(1) {
+  animation-delay: 0s;
+}
+#slideset > *:nth-child(2) {
+  animation-delay: 6s;
+}
+#slideset > *:nth-child(3) {
+  animation-delay: 12s;
+}
+
+#slideset p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+}
+#slideset h1 {
+  color: #fff;
+  font-size: 3.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.nav-bottom-link {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 1rem 2rem;
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: normal;
+  background-color: red;
+  border-radius: 0.5rem;
+  transition: 0.4s all;
+  border: none;
+}
+.nav-bottom-link:hover {
+  background-color: #fff;
+  color: black;
+}
 
 /* Project Responsive */
 /* Media query: large or landscape phones (1200px and down) */
@@ -352,26 +418,26 @@ body {
     margin-bottom: 2rem;
     font-size: 1rem;
   }
-  /* .nav-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
-    position: absolute;
-    background-color: #fff;
-    top: 100%; 
-    right: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
+  /* header bottom */
+
+  .nav-bottom-link {
+    padding: 1rem;
   }
-  .nav-manu-item {
-    margin: 1rem 0;
-  } */
 }
 /* Media query: large or landscape phones (576px and down) */
 @media only screen and (max-width: 576px) {
   /* Header */
+  /* header bottom */
+  #slideset div {
+    max-width: 100%;
+    left: 1rem;
+  }
+  #slideset p {
+    font-size: 1rem;
+  }
+  #slideset h1 {
+    font-size: 2.5rem;
+  }
 }
 /* Media query: large or landscape phones (370px and down) */
 @media screen and (max-width: 370px) {
