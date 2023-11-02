@@ -284,6 +284,9 @@ body {
   list-style: none;
   margin: 0 2rem;
 }
+#nav-menu-home {
+  margin-left: 0;
+}
 .nav-menu a {
   text-decoration: none;
   color: black;
@@ -373,10 +376,144 @@ body {
   background-color: #fff;
   color: black;
 }
+/* MAIN main main */
+/* Story (About)*/
+
+.about {
+  display: flex;
+  align-items: center;
+  margin: 4rem 2rem;
+}
+.about-content-left {
+  flex: 0 0 50%;
+}
+.about-content-left-box {
+  max-width: 40rem;
+}
+.about-content-left-box span {
+  color: #9e9e9e;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.about-content-left-box p {
+  color: #9e9e9e;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+}
+.about-content-right {
+  flex: 0 0 50%;
+  max-width: 46rem;
+}
+.about-content-right img {
+  width: 100%;
+}
+/* Main-meet-our-chefs */
+/* Main-meet-our-chefs */
+.meet {
+  background-color: #f7f3f3;
+  padding: 4rem 2rem 0rem;
+}
+
+.meet-text-section {
+  text-align: center;
+  margin: 0;
+  font-size: 1.2rem;
+}
+.meet-text-section p {
+  color: #9e9e9e;
+  font-size: 0.8rem;
+  margin: 2rem 2rem 4rem 2rem;
+  font-weight: bold;
+}
+.chefs {
+  display: flex;
+  justify-content: space-between;
+}
+.chef {
+  flex-basis: 28rem;
+}
+.team-hover {
+  position: relative;
+
+  /* height: 30.2rem; */
+}
+.team-hover img {
+  width: 100%;
+  height: 100%;
+  transition: all 1.5s;
+}
+.team-hover:hover img {
+  transform: scale(1.2);
+}
+.team-hover-div-img {
+  overflow: hidden;
+}
+.team-item {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 1.5s;
+}
+
+.team-hover:hover .team-item {
+  background-color: #2e2e2e;
+  opacity: 0.8;
+  /* transform: translateY(0); */
+}
+.social-icon {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-left: 0;
+}
+.social-icon-div {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 100rem;
+  background-color: #424242;
+  margin: 0.5rem;
+  padding: 0.5rem 0.3rem 0rem 0.6rem;
+}
+
+.team-item h4 {
+  font-size: 1.6rem;
+  padding: 16rem 3.5rem 0rem 3.5rem;
+  margin: 0;
+  color: #fff;
+}
+.envelope-1 {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.linkedin-1 {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.social-icon-div:hover {
+  background-color: red;
+}
+.team-hover-name {
+  text-align: center;
+}
+.team-hover-name p {
+  color: #9e9e9e;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 1rem;
+}
 
 /* Project Responsive */
 /* Media query: large or landscape phones (1200px and down) */
 @media only screen and (max-width: 1200px) {
+  /* header */
   .nav-content {
     flex-wrap: wrap;
   }
@@ -390,6 +527,15 @@ body {
 /* Media query: large or landscape phones (992px and down) */
 @media only screen and (max-width: 992px) {
   /* Header */
+  /* main-about */
+  .about {
+    flex-direction: column;
+  }
+  /* main-meet-chef */
+  .team-item h4 {
+    font-size: 1.4rem;
+    padding: 8rem 3.5rem 0rem 3.5rem;
+  }
 }
 /* Media query: large or landscape phones (768px and down) */
 @media only screen and (max-width: 768px) {
@@ -418,10 +564,20 @@ body {
     margin-bottom: 2rem;
     font-size: 1rem;
   }
+  #nav-menu-home {
+    margin-left: 1rem;
+  }
   /* header bottom */
 
   .nav-bottom-link {
     padding: 1rem;
+  }
+  /* main-meet-chef */
+  .team-hover-name h1 {
+    font-size: 1.2rem;
+  }
+  .team-hover-name p {
+    font-size: 0.8rem;
   }
 }
 /* Media query: large or landscape phones (576px and down) */
@@ -437,6 +593,17 @@ body {
   }
   #slideset h1 {
     font-size: 2.5rem;
+  }
+  /* main-meet-chef */
+  .chefs {
+    flex-direction: column;
+  }
+  .team-item h4 {
+    font-size: 1rem;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+  .team-hover-name h1 {
+    font-size: 2rem;
   }
 }
 /* Media query: large or landscape phones (370px and down) */
