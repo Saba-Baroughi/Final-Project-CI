@@ -225,10 +225,11 @@ body {
 }
 /* header */
 .header {
-  background-image: url("http://127.0.0.1:5501/assets/images/Header-image.jpg");
+  background-image: url(./images/Header-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  height: 100vh;
 }
 .header-wrapper {
   margin: 2rem 0rem;
@@ -249,7 +250,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0.5rem 5rem;
+  margin: 1rem 2rem;
 }
 .nav-logo {
   display: flex;
@@ -266,15 +267,113 @@ body {
   border-radius: 10rem;
   margin: 0.8rem 0.4rem 0 0.4rem;
 }
+.nav-toggle-div {
+  display: none;
+}
+.bigger-icon {
+  font-size: 32px;
+}
+
 .nav-menu {
   padding-left: 0;
   display: flex;
+  list-style-type: none;
 }
 .nav-manu-item {
   list-style: none;
   margin: 0 2rem;
 }
-.nav-reserve {
-  display: flex;
-  align-items: center;
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+}
+.nav-menu a:hover {
+  color: red;
+}
+
+.nav-reserve-link {
+  text-decoration: none;
+  background-color: red;
+  color: #fff !important;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  outline: 0;
+  transition: 0.4s;
+  border-radius: 0.5rem;
+}
+.nav-reserve-link:hover {
+  cursor: pointer;
+  background-color: rgb(124, 86, 86);
+}
+
+/* head/nav-bottom */
+
+/* Project Responsive */
+/* Media query: large or landscape phones (1200px and down) */
+@media only screen and (max-width: 1200px) {
+  .nav-content {
+    flex-wrap: wrap;
+  }
+  .nav-manu-item {
+    margin: 0 0.8rem;
+  }
+  .nav-reserve-link {
+    padding: 0.5rem 1rem;
+  }
+}
+/* Media query: large or landscape phones (992px and down) */
+@media only screen and (max-width: 992px) {
+  /* Header */
+}
+/* Media query: large or landscape phones (768px and down) */
+@media only screen and (max-width: 768px) {
+  /* Header */
+  .nav-content {
+    margin: 0 1rem;
+  }
+  .nav-toggle-div {
+    display: block;
+    position: relative;
+    cursor: pointer;
+  }
+  .nav-menu {
+    position: fixed;
+    top: 5rem;
+    left: -195.2px;
+    bottom: 0;
+    background: rgb(222 215 222);
+    width: 12.2rem;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    margin: 0;
+    transition: 0.3s all;
+  }
+  .nav-manu-item {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+  /* .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    position: absolute;
+    background-color: #fff;
+    top: 100%; 
+    right: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+  }
+  .nav-manu-item {
+    margin: 1rem 0;
+  } */
+}
+/* Media query: large or landscape phones (576px and down) */
+@media only screen and (max-width: 576px) {
+  /* Header */
+}
+/* Media query: large or landscape phones (370px and down) */
+@media screen and (max-width: 370px) {
+  /* Header */
 }
