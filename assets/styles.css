@@ -250,7 +250,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem 2rem;
+  margin: 0rem 2rem;
 }
 .nav-logo {
   display: flex;
@@ -293,6 +293,7 @@ body {
 }
 .nav-menu a:hover {
   color: red;
+  cursor: pointer;
 }
 
 .nav-reserve-link {
@@ -378,11 +379,14 @@ body {
 }
 /* MAIN main main */
 /* Story (About)*/
-
+#hidden-p {
+  opacity: 0;
+  margin: 0rem 0rem 5rem;
+}
 .about {
   display: flex;
   align-items: center;
-  margin: 4rem 2rem;
+  margin: 0rem 2rem;
 }
 .about-content-left {
   flex: 0 0 50%;
