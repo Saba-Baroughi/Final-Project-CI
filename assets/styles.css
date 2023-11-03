@@ -534,7 +534,7 @@ body {
   /* main-meet-chef */
   .team-item h4 {
     font-size: 1.4rem;
-    padding: 8rem 3.5rem 0rem 3.5rem;
+    padding: 10rem 3.5rem 0rem 3.5rem;
   }
 }
 /* Media query: large or landscape phones (768px and down) */
@@ -573,6 +573,13 @@ body {
     padding: 1rem;
   }
   /* main-meet-chef */
+  .meet-text-section {
+    font-size: 1rem;
+  }
+  .team-item h4 {
+    font-size: 1.2rem;
+    padding: 6rem 1.5rem 0rem 1.5rem;
+  }
   .team-hover-name h1 {
     font-size: 1.2rem;
   }
@@ -598,9 +605,12 @@ body {
   .chefs {
     flex-direction: column;
   }
-  .team-item h4 {
+  .meet-text-section {
     font-size: 1rem;
-    padding: 2rem 2rem 0rem 2rem;
+  }
+  .team-item h4 {
+    font-size: 1.6rem;
+    padding: 18rem 6rem 0rem 6rem;
   }
   .team-hover-name h1 {
     font-size: 2rem;
@@ -609,4 +619,41 @@ body {
 /* Media query: large or landscape phones (370px and down) */
 @media screen and (max-width: 370px) {
   /* Header */
+
+  /* Main-story(about) */
+  .about {
+    margin: 2rem;
+  }
+  .about-content-left-box h1 {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  .about-content-left-box span {
+    font-size: 0.8rem;
+  }
+  .about-content-left-box p {
+    font-size: 1rem;
+
+    line-height: 1rem;
+    margin-top: 0;
+  }
+  /* main-meet-chefs*/
+  .meet {
+    margin: 0rem;
+    padding: 2rem 2rem 0rem;
+  }
+  .meet-text-section h1 {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+  .meet-text-section p {
+    margin: 2rem;
+  }
+  .team-hover-name h1 {
+    font-size: 1.4rem;
+  }
+  .team-item h4 {
+    font-size: 1.2rem;
+    padding: 8rem 1rem 0rem;
+  }
 }
