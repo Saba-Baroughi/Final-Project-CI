@@ -448,37 +448,91 @@
         <section class="footer">
           <div class="footer-wrapper">
             <section class="footer-up">
-              <div class="footer-up-map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5404234825905!2d-0.12212862453864287!3d51.5033006110043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2suk!4v1688642253552!5m2!1sen!2suk"
-                  width="600"
-                  height="525"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-              <form class="footer-up-form">
+              <iframe
+                class="iFrame"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5404234825905!2d-0.12212862453864287!3d51.5033006110043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2suk!4v1688642253552!5m2!1sen!2suk"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+
+              <form
+                class="footer-up-form"
+                method="POST"
+                action="https://formdump.codeinstitute.net"
+              >
                 <h1>Contact Us</h1>
-                <input type="text" id="name" placeholder="Full name" />
-                <input type="email" id="Email" placeholder="Email address" />
+
+                <label class="form-label" for="name">Full Name:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="Full name"
+                  required
+                />
                 <br />
-                <input type="text" id="subject" placeholder="Subject" />
                 <br />
-                <textarea
-                  name=""
-                  id="project"
-                  placeholder="Tell about your project"
-                  cols="30"
-                  rows="10"
-                ></textarea>
+
+                <label class="form-label" for="email_address"
+                  >Email Address:</label
+                >
+                <input type="email" id="Email" name="email_address" required />
                 <br />
-                <a href="#" id="footer-up-link">Send Message</a>
+                <br />
+                <label class="form-label" for="tabel-size"
+                  >Choose your tabel size:</label
+                >
+                <div class="radio-buttons">
+                  <div>
+                    <label class="form-label-item" for="s-tabel"
+                      >(1-4) <i class="fa-solid fa-person"></i
+                    ></label>
+                    <input
+                      type="radio"
+                      name="tabel-size"
+                      id="s-tabel"
+                      value="small-tabel"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label class="form-label-item" for="m-tabel"
+                      >(5-8) <i class="fa-solid fa-person"></i
+                    ></label>
+                    <input
+                      type="radio"
+                      name="tabel-size"
+                      id="m-tabel"
+                      value="med-tabel"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label class="form-label-item" for="l-tabel"
+                      >(9-16) <i class="fa-solid fa-person"></i
+                    ></label>
+
+                    <input
+                      type="radio"
+                      name="tabel-size"
+                      id="l-tabel"
+                      value="large-tabel"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <button type="submit" id="footer-up-link">
+                  Reserve a table
+                </button>
               </form>
             </section>
           </div>
-          <section class="footer-bottom">
+          <!-- <section class="footer-bottom">
             <div class="footer-bottom-boxes">
               <div class="footer-bottom-box1">
                 <h2>Find us</h2>
@@ -529,7 +583,7 @@
                 </p>
               </div>
             </div>
-          </section>
+          </section> -->
         </section>
       </footer>
     </div>
