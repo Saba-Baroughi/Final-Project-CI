@@ -629,6 +629,9 @@ body {
   justify-content: space-between;
   gap: 0.5rem;
 }
+/* .radio-buttons input[type="radio"]:checked + label i {
+  color: red !important;
+} */
 .form-label {
   font-size: 1.2rem;
 }
@@ -639,10 +642,14 @@ body {
 #name {
   width: 70%;
   border-radius: 0.5rem;
+  outline: none;
+  border: 1px solid lightgray;
 }
 #Email {
   width: 70%;
   border-radius: 0.5rem;
+  outline: none;
+  border: 1px solid lightgray;
 }
 
 #footer-up-link {
@@ -659,8 +666,7 @@ body {
 }
 /* Footer-bottom */
 .footer-bottom {
-  padding: 10rem 6rem 6rem;
-  border-top: 1px solid rgb(231, 224, 224);
+  padding: 6rem 2rem;
 }
 .footer-bottom-boxes {
   display: flex;
