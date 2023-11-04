@@ -514,6 +514,71 @@ body {
   margin: 1rem;
 }
 
+/* main-ourmenus */
+.menus {
+}
+.foodmenu {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+.dishes {
+  position: relative;
+
+  flex-basis: 33.33%;
+  max-height: 24rem;
+}
+
+.dishes-div-image {
+  /* overflow: hidden; For make bigger the foto*/
+
+  height: 100%;
+}
+.dishes-div-image img {
+  width: 100%;
+  height: 100%;
+  transition: 0.8s all;
+}
+.dishes-hover {
+  display: flex;
+  transition: 0.8s all;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 35%;
+  transform: translatey(-100%);
+  opacity: 0;
+  padding: 1.5rem;
+  color: #fff;
+}
+.dishes:hover .dishes-hover {
+  opacity: 0.8;
+  background-color: #2e2e2e;
+  /* transform: translatey(0); */
+}
+.dishes:hover {
+  cursor: pointer;
+}
+.dishes:hover img {
+  /* transform: scale(1.2); */
+}
+.dishes-div-image {
+}
+
+.dishes-text2 h5 {
+  margin: 0;
+  font-size: 2rem;
+}
+.dishes-text2 p {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.dishes-text1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 /* Project Responsive */
 /* Media query: large or landscape phones (1200px and down) */
 @media only screen and (max-width: 1200px) {
@@ -526,6 +591,20 @@ body {
   }
   .nav-reserve-link {
     padding: 0.5rem 1rem;
+  }
+  /* main-menu */
+  .dishes-hover {
+    padding: 1rem;
+  }
+  .dishes-text2 h5 {
+    font-size: 1.4rem;
+  }
+  .dishes-text2 p {
+    margin: 0.6rem 0rem;
+    font-size: 0.8rem;
+  }
+  .dishes-text1 {
+    font-size: 1.5rem;
   }
 }
 /* Media query: large or landscape phones (992px and down) */
@@ -540,9 +619,31 @@ body {
     font-size: 1.4rem;
     padding: 10rem 3.5rem 0rem 3.5rem;
   }
+  /* Main-menu */
+  .dishes {
+    flex-basis: 50%;
+  }
+  .dishes-text2 h5 {
+    font-size: 1.4rem;
+  }
+  .dishes-text2 p {
+    margin: 0.6rem 0rem;
+    font-size: 0.8rem;
+  }
+  .dishes-text1 {
+    font-size: 2rem;
+  }
 }
+
 /* Media query: large or landscape phones (768px and down) */
 @media only screen and (max-width: 768px) {
+  /* for when press the navbar we aere going
+   directly to pages but in small device */
+  /* Header */
+  #hidden-p {
+    opacity: 0;
+    margin: 0rem;
+  }
   /* Header */
   .nav-content {
     margin: 0 1rem;
@@ -590,6 +691,20 @@ body {
   .team-hover-name p {
     font-size: 0.8rem;
   }
+  /* main-menu */
+  .dishes-hover {
+    padding: 0.4rem;
+  }
+  .dishes-text2 h5 {
+    font-size: 1.4rem;
+  }
+  .dishes-text2 p {
+    margin: 0.6rem 0rem;
+    font-size: 0.8rem;
+  }
+  .dishes-text1 {
+    font-size: 1.4rem;
+  }
 }
 /* Media query: large or landscape phones (576px and down) */
 @media only screen and (max-width: 576px) {
@@ -619,11 +734,23 @@ body {
   .team-hover-name h1 {
     font-size: 2rem;
   }
+  /* main-menu */
+  .dishes {
+    flex-basis: 100%;
+  }
+  .dishes-hover {
+    padding: 1rem;
+  }
+  .dishes-text2 h5 {
+    font-size: 1.6rem;
+  }
+
+  .dishes-text1 {
+    font-size: 1.4rem;
+  }
 }
 /* Media query: large or landscape phones (370px and down) */
 @media screen and (max-width: 370px) {
-  /* Header */
-
   /* Main-story(about) */
   .about {
     margin: 2rem;
@@ -659,5 +786,19 @@ body {
   .team-item h4 {
     font-size: 1.2rem;
     padding: 8rem 1rem 0rem;
+  }
+  /* main-menu */
+
+  .dishes-hover {
+    padding: 0.4rem;
+  }
+  .dishes-text2 h5 {
+    font-size: 1.2rem;
+  }
+  .dishes-text2 p {
+    font-size: 0.6rem;
+  }
+  .dishes-text1 {
+    font-size: 1.2rem;
   }
 }
