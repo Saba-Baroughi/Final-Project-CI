@@ -549,7 +549,7 @@ body {
   height: 35%;
   transform: translatey(-100%);
   opacity: 0;
-  padding: 1.5rem;
+  padding: 1rem;
   color: #fff;
 }
 .dishes:hover .dishes-hover {
@@ -568,14 +568,14 @@ body {
 
 .dishes-text2 h5 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 .dishes-text2 p {
   font-size: 0.8rem;
   font-weight: bold;
 }
 .dishes-text1 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
@@ -783,9 +783,7 @@ body {
   .dishes {
     flex-basis: 50%;
   }
-  .dishes-text2 h5 {
-    font-size: 1.4rem;
-  }
+
   .dishes-text2 p {
     margin: 0.6rem 0rem;
     font-size: 0.8rem;
@@ -855,9 +853,7 @@ body {
   .dishes-hover {
     padding: 0.4rem;
   }
-  .dishes-text2 h5 {
-    font-size: 1.4rem;
-  }
+
   .dishes-text2 p {
     margin: 0.6rem 0rem;
     font-size: 0.8rem;
