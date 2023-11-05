@@ -383,6 +383,14 @@ body {
   opacity: 0;
   margin: 0rem 0rem 5rem;
 }
+#hidden-text {
+  opacity: 0;
+  margin: 0rem 0rem 5rem;
+}
+#hidden-text2 {
+  opacity: 0;
+  margin: 0rem 0rem 5rem;
+}
 .about {
   display: flex;
   align-items: center;
