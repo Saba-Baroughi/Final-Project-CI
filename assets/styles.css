@@ -666,10 +666,11 @@ body {
 }
 /* Footer-bottom */
 .footer-bottom {
-  padding: 6rem 2rem;
+  padding: 2rem;
 }
 .footer-bottom-boxes {
   display: flex;
+  flex-wrap: wrap;
   height: 20rem;
   justify-content: space-between;
   /* align-items: center; */
@@ -685,36 +686,41 @@ body {
   color: #6c6c6c;
 }
 .footer-bottom-box3 {
-  background-image: url(https://templatemo.com/templates/templatemo_515_eatery/images/footer-open-hour-bg.jpg);
+  background-image: url("./images/footer-open-hour-bg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 
   border-radius: 0.8rem;
   position: relative;
-  flex-basis: 34%;
+  flex-basis: 25%;
 
   color: #fff;
 }
+
 .background {
   background-color: #212121;
   position: absolute;
   transform: translateY(0);
   width: 100%;
   height: 100%;
-  padding: 0 5rem;
+  padding: 0 1rem;
   opacity: 0.8;
   border-radius: 0.9rem;
 }
+
 .footer-bottom-box3 h2 {
   font-size: 1.6rem;
+  font-weight: bold;
+  border-bottom: 1px solid white;
 }
-.footer-bottom-box3 .narrow {
-  font-size: 1.2rem;
-}
-.footer-bottom-box3 .bold {
+
+.footer-bottom-box3 {
   font-size: 1.2rem;
   font-weight: bold;
+}
+#closed {
+  color: red;
 }
 .footer-bottom-box4 {
 }
@@ -724,6 +730,9 @@ body {
   padding: 0;
 }
 .socialmedia li {
+  list-style-type: none;
+}
+.socialmedia li a {
   padding: 1rem;
   color: red;
 }
@@ -766,6 +775,13 @@ body {
   .dishes-text1 {
     font-size: 1.5rem;
   }
+  /* footer-bottom */
+  .footer-bottom-box3 h2 {
+    font-size: 1.6rem;
+  }
+  .background p {
+    font-size: 1rem;
+  }
 }
 /* Media query: large or landscape phones (992px and down) */
 @media only screen and (max-width: 992px) {
@@ -790,6 +806,32 @@ body {
   }
   .dishes-text1 {
     font-size: 2rem;
+  }
+  /* footer-bottom */
+  .footer-bottom {
+    padding: 2rem 2rem 12rem;
+  }
+
+  .footer-bottom-box1 h2 {
+    font-size: 1.4rem;
+  }
+  .footer-bottom-box1 p {
+    font-size: 1rem;
+  }
+  .footer-bottom-box1,
+  .footer-bottom-box4 {
+    flex-basis: 48%;
+  }
+
+  .footer-bottom-box3 {
+    height: 17rem;
+    flex-basis: 48%;
+  }
+  .socialmedia {
+    justify-content: flex-start;
+  }
+  .footer-bottom-box4 p {
+    font-size: 0.8rem;
   }
 }
 
@@ -904,7 +946,28 @@ body {
   .dishes-text1 {
     font-size: 1.4rem;
   }
+  /* footer-up */
+  .footer-up {
+    margin-bottom: 3rem;
+  }
+  .iFrame {
+    flex-basis: 100%;
+    margin-bottom: 2rem;
+  }
+  .footer-up-form {
+    flex-basis: 100%;
+  }
+  /* footer-bottom */
+  .footer-bottom {
+    padding: 2rem 2rem 28rem;
+  }
+  .footer-bottom-box1,
+  .footer-bottom-box4,
+  .footer-bottom-box3 {
+    flex-basis: 100%;
+  }
 }
+
 /* Media query: large or landscape phones (370px and down) */
 @media screen and (max-width: 370px) {
   /* Main-story(about) */
@@ -976,5 +1039,27 @@ body {
   }
   .footer-up-form {
     flex-basis: 100%;
+  }
+  /* footer-bottom */
+  .footer-bottom {
+    padding: 2rem 2rem 16rem;
+  }
+  .footer-bottom-box1 h2 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  .footer-bottom-box1 p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  .footer-bottom-box3 {
+    height: 14rem;
+  }
+  .footer-bottom-box3 h2 {
+    font-size: 1.2rem;
+  }
+  .footer-bottom-box3 p {
+    margin-bottom: 0;
+    font-size: 0.8rem;
   }
 }
