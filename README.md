@@ -64,6 +64,7 @@ No errors were found when passing through the official [(Jigsaw) validator](http
 
 Accessibility
 I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
+
 ![accessibility](./assets/images/Accessibility.png)
 
 # Unfixed Bugs
