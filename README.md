@@ -1,15 +1,17 @@
 # it is my first project
 
 Eatery Cafe is a distinguished London eatery, celebrated for its diverse and high-quality cuisine. Our restaurant is the ultimate destination for those seeking a delightful dining experience in a charming atmosphere, perfect for romantic evenings or gatherings with loved ones, with a spacious seating capacity for up to 50 guests.
-![Am I responsive](https://ui.dev/amiresponsive?url=https://saba-baroughi.github.io/Final-Project-CI/)
+[Am I responsive](https://ui.dev/amiresponsive?url=https://saba-baroughi.github.io/Final-Project-CI/)
 
-Existing Features
-Navigation Bar
+# Existing Features
+
+## Navigation Bar
 
 Featured on a single page, the fully responsive navigation bar includes links to the Home, About, Chef, Menu, and Contact sections, with a fixed menu at the top of each section, allowing for effortless navigation.
 This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
 navbar image
-The landing page image
+
+## The landing page image
 
 The landing page features a captivating photograph with text overlay and an eye-catching animation to grab the user's attention. The animation automatically changes the text every 6 seconds, allowing the user to experience different messages without having to click a button.
 
