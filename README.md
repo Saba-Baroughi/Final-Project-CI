@@ -39,3 +39,15 @@ The Chef section introduces users to the talented individuals responsible for cr
 This section not only provides users with a general overview of the specialist menu but also encourages them, offering a sneak peek and insights to help them make informed decisions before their visit, including prices and a list of ingredients.
 
 ![menu-section](./assets/images/menu.section.png)
+
+## Contact
+
+This section provides the location and a reservation form, making it easy for users to find the restaurant's address and book their table.
+
+![contact](./assets/images/contact-part1.png)
+
+## footer
+
+The footer section includes links to relevant social media sites, opening times, and addresses. These links open in new tabs for easy user navigation. The footer is valuable as it encourages users to stay connected through social media.
+
+![footer](./assets/images/footer.png)

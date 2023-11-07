@@ -78,7 +78,7 @@ body {
 }
 /* header */
 .header {
-  background-image: url(https://templatemo.com/templates/templatemo_515_eatery/images/slider-image1.jpg);
+  background-image: url(./images/Header-image.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -547,7 +547,7 @@ body {
   color: #6c6c6c;
 }
 .footer-bottom-box3 {
-  background-image: url("https://templatemo.com/templates/templatemo_515_eatery/images/footer-open-hour-bg.jpg");
+  background-image: url("./images/footer-open-hour-bg.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
