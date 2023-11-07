@@ -67,11 +67,11 @@ I confirmed that the colors and fonts chosen are easy to read and accessible by 
 
 ![accessibility](./assets/images/Accessibility.png)
 
-# Fixed Bugs
+## Fixed Bugs
 
 I received a warning about changing image formats to WebP to improve accessibility, according to Lighthouse in DevTools. Although I made the changes, it did not increase the accessibility percentage.
 
-# Unfixed Bugs
+## Unfixed Bugs
 
 1-The value of the for attribute of the label element must be the ID of a non-hidden form control.
 
@@ -81,7 +81,7 @@ From line 502, column 17; to line 503, column 19
 
 2- The website's accessibility score is currently at 87%, and there is a warning indicating the need to 'Enable text compression.
 
-# Deployment
+## Deployment
 
 The site was deployed to GitHub pages. The steps to deploy are as follows:
 In the GitHub repository, navigate to the Settings tab
@@ -89,7 +89,7 @@ From the source section drop-down menu, select the Master Branch
 Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 The live link can be found here - ( https://saba-baroughi.github.io/Final-Project-CI/)
 
-# Content
+## Content
 
 Instructions on how to validate was taken from [Code Institute](https://learn.codeinstitute.net/courses/)
 The icons in the body were taken from [Font Awesome](https://fontawesome.com/)
