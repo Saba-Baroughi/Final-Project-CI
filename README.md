@@ -51,3 +51,46 @@ This section provides the location and a reservation form, making it easy for us
 The footer section includes links to relevant social media sites, opening times, and addresses. These links open in new tabs for easy user navigation. The footer is valuable as it encourages users to stay connected through social media.
 
 ![footer](./assets/images/footer.png)
+
+# Testing
+
+## Validator Testing
+
+HTML
+No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/#textarea)
+
+CSS
+No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator)
+
+Accessibility
+I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
+![accessibility](./assets/images/Accessibility.png)
+
+# Unfixed Bugs
+
+## HTML Validation
+
+For example </br>
+since it has used prettier in my VSC, there are various warning about fixing it.
+
+Warning: Consider using the h1 element as a top-level heading only (all h1 elements are treated as top-level headings by many screen readers and other tools).
+
+From line 485, column 17; to line 485, column 20
+
+          <h1>Contact
+
+# Deployment
+
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+In the GitHub repository, navigate to the Settings tab
+From the source section drop-down menu, select the Master Branch
+Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+The live link can be found here - ( https://saba-baroughi.github.io/Final-Project-CI/)
+
+# Credits
+
+## Content
+
+Instructions on how to implement form validation on the Sign Up page was taken from [Code Institute](https://learn.codeinstitute.net/courses/)
+The icons in the body were taken from [Font Awesome](https://fontawesome.com/)
+The images in the body were taken from [unsplash](https://unsplash.com/)
