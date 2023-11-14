@@ -73,13 +73,7 @@ I received a warning about changing image formats to WebP to improve accessibili
 
 ## Unfixed Bugs
 
-1-The value of the for attribute of the label element must be the ID of a non-hidden form control.
-
-From line 502, column 17; to line 503, column 19
-
-          <label class="form-label" for="tabel-size"↩                  >Choose
-
-2- The website's accessibility score is currently at 87%, and there is a warning indicating the need to 'Enable text compression.
+Thare is not unfixed bugs.
 
 ## Deployment
 
