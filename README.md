@@ -69,6 +69,8 @@ I confirmed that the colors and fonts chosen are easy to read and accessible by 
 
 ## Fixed Bugs
 
+There was an error in HTML Validation which was 'The value of the for attribute of the label element must be the ID of a non-hidden form control.' Then I matched the id with for in the label tag and the error was fixed.
+
 I received a warning about changing image formats to WebP to improve accessibility, according to Lighthouse in DevTools. Although I made the changes, it did not increase the accessibility percentage.
 
 ## Unfixed Bugs
